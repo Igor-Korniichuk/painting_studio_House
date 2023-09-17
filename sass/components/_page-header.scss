@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (max-width: 509px) {
+    .menu {
+        display: none;
+    }
+}
+
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}

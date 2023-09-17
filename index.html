@@ -11,6 +11,43 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+    <header class="page-header">
+        <div class="conteiner">
+            <nav class="nav">
+                <a href="" class="logo"></a>
+                <button class="menu-toggle js-open-menu"  aria-expanded="false" ria-controls="mobile-menu">
+                    <svg width="30" height="30" aria-label="Переключатель мобильного меню">
+                        <!-- <use class="icon-close" href="./img/symbol-defs.svg#icon-mob_menu_close"></use> -->
+                        <use class="icon-menu" href="./img/symbol-defs.svg#icon-mob_menu"></use>
+                    </svg>                    
+                </button>
+                <ul class="menu">
+                    <li><a href="" class="link">Репродукции</a></li>
+                    <li><a href="" class="link">Новинки</a></li>
+                    <li><a href="" class="link">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main></main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="30" height="30" aria-label="Переключатель мобильного меню">
+                <use class="icon-close" href="./img/symbol-defs.svg#icon-mob_menu_close">                    
+                </use>                
+            </svg>
+        </button>
     
+        <ul class="mobile-menu">
+            <li><a href="" class="link">Репродукции</a></li>
+            <li><a href="" class="link">Новинки</a></li>
+            <li><a href="" class="link">О нас</a></li>
+        </ul>
+    </div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

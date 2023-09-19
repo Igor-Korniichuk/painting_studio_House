@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,18 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+    <!--Шапка-->
     <header class="page-header">
         <div class="conteiner">
             <nav class="nav">
-                <a href="" class="logo"></a>
+                <a href="" class="logo">
+                    <svg width="35" height="35">
+                        <use href="./img/symbol-defs.svg#icon-star_1"></use>
+                    </svg>
+                    <span class="text-logo">Ink. House</span>
+                </a>
                 <button class="menu-toggle js-open-menu"  aria-expanded="false" ria-controls="mobile-menu">
-                    <svg width="30" height="30" aria-label="Переключатель мобильного меню">
-                        <!-- <use class="icon-close" href="./img/symbol-defs.svg#icon-mob_menu_close"></use> -->
+                    <svg width="30" height="30" aria-label="Переключатель мобильного меню">                        
                         <use class="icon-menu" href="./img/symbol-defs.svg#icon-mob_menu"></use>
                     </svg>                    
                 </button>
@@ -26,10 +31,195 @@
                     <li><a href="" class="link">Новинки</a></li>
                     <li><a href="" class="link">О нас</a></li>
                 </ul>
+                <a class="card" href="">
+                    <svg width="22" height="22" aria-label="Кнопка корзины">
+                        <use class="icon-card" href="./img/symbol-defs.svg#icon-shopping-cart"></use>
+                    </svg>
+                </a>
             </nav>
         </div>
     </header>
-    <main></main>
+<!--Головна сторінка-->
+    <main>
+        <!--Секція "hero"-->
+        <section class="hero">
+            <div class="container">
+                <img class="bird" src="./img/bird.svg" alt="Птица">
+                <h1>Реплики картин от<span class="text-logo">Ink. House</span></h1>
+                <p class="text-hero">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                <a class="products-link" href="">Продукция</a>
+            </div>
+        </section>
+        <!--Каталог репродукцій-->
+        <section class="catalog">
+            <div class="container">
+
+                <div class="head-catalog">
+                    <h2 class="catalog-title">Репродукции</h2>
+                    <ul class="menu-catalog">
+                        <li class="item-menu-catalog">Франция</li>
+                        <li class="item-menu-catalog">Германия</li>
+                        <li class="item-menu-catalog">Англия</li>
+                    </ul>
+                </div>
+
+                <ul class="card-set">
+                    <li class="card-item">
+                        <img srcset="./img/france_1.jpg 1x, ./img/france_1@2x.jpg 2x" src="./img/france_1.jpg" alt="Охота Амура">
+                        <p class="author">Марсель Руссо</p>
+                        <h3>Охота Амура</h3>
+                        <p class="description-drawing">Холст, масло (50х80)</p>
+                        <p card-price>14 500 грн</p>
+                        <button class="add-to-cart" type="button">В корзину</button>
+                    </li>
+                    <li class="card-item">
+                        <img srcset="./img/france_2.jpg 1x, ./img/france_2@2x.jpg 2x" src="./img/france_2.jpg" alt="Дама с собачкой">
+                        <p class="author">Анри Селин</p>
+                        <h3>Дама с собачкой</h3>
+                        <p class="description-drawing">Акрил, бумага (50х80)</p>
+                        <p card-price>16 500 грн</p>
+                        <button class="add-to-cart" type="button">В корзину</button>
+                    </li>
+                    <li class="card-item">
+                        <img srcset="./img/france_3.jpg 1x, ./img/france_3@2x.jpg 2x" src="./img/france_3.jpg" alt="Процедура">
+                        <p class="author">Франсуа Дюпон</p>
+                        <h3>Процедура</h3>
+                        <p class="description-drawing">Цветная литография (40х60)</p>
+                        <p card-price>20 000 грн</p>
+                        <button class="add-to-cart" type="button">В корзину</button>
+                    </li>
+                    <li class="card-item"><img srcset="./img/france_4.jpg 1x, ./img/france_4@2x.jpg 2x" src="./img/france_4.jpg" alt="Роза">
+                    <p class="author">Луи Детуш</p>
+                    <h3>Роза</h3>
+                    <p class="description-drawing">Бумага, акрил (50х80)</p>
+                    <p card-price>12 000 грн</p>
+                    <button class="add-to-cart" type="button">В корзину</button></li>
+                    <li class="card-item">
+                        <img srcset="./img/france_5.jpg 1x, ./img/france_5@2x.jpg 2x" src="./img/france_5.jpg" alt="Птичья трапеза">
+                        <p class="author">Франсуа Дюпон</p>
+                        <h3>Птичья трапеза</h3>
+                        <p class="description-drawing">Птичья трапеза</p>
+                        <p card-price>22 500 грн</p>
+                        <button class="add-to-cart" type="button">В корзину</button>
+                    </li>
+                    <li class="card-item">
+                        <img srcset="./img/france_6.jpg 1x, ./img/france_6@2x.jpg 2x" src="./img/france_6.jpg" alt="Пейзаж с рыбой">
+                        <p class="author">Пьер Моранж</p>
+                        <h3>Пейзаж с рыбой</h3>
+                        <p class="description-drawing">Цветная литография (40х60)</p>
+                        <p card-price>20 000 грн</p>
+                        <button class="add-to-cart" type="button">В корзину</button>
+                    </li>
+                </ul>                    
+                
+            </div>
+        </section>
+        <!--Секція "Promo"-->
+        <section class="promo">
+            <div class="container">
+                <h2 class="title-promo">Новая коллекция французских авторов</h2>
+                <p class="text-promo">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны
+                быть заблокированы в рамках своих собственных рациональных ограничений.
+                Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений
+                прогрессивного развития.</p>
+                <a class="promo-link" href="">Ознакомиться</a>
+            </div>
+        </section>
+        <!--Секція "Наша команда"-->
+        <section class="our-team">
+            <div class="container">
+                <img class="frame-hand" src="./img/frame-hand.svg" alt="Рука в рамке">
+                <h2 class="title-our-team">Наша команда</h2>
+                <p class="text-our-team">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов,
+                поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким
+                активом.</p>
+                <ul class="foto-our-tem">
+                    <li class="person-our-team">
+                        <img srcset="./img/person_1.jpg 1x, ./img/person_1@2x.jpg 1x" src="./img/person_1.jpg" alt="Член команды">
+                    </li>
+                    <li class="person-our-team">
+                        <img srcset="./img/person_2.jpg 1x, ./img/person_2@2x.jpg 2x" src="./img/person_2.jpg" alt="Член команды">
+                    </li>
+                    <li class="person-our-team">
+                        <img srcset="./img/person_3.jpg 1x, ./img/person_3@2x.jpg 2x" src="./img/person_3.jpg" alt="Член команды">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-contacts">
+                <a href="" class="logo">
+                    <svg width="35" height="35">
+                        <use href="./img/symbol-defs.svg#icon-star_1"></use>
+                    </svg>
+                    <span class="text-logo">Ink. House</span>
+                </a>
+                <a class="footer-contact-tel" href="tel:+380671111111">+38 (067) 111 11 11</a>
+                <a href="">Мастерская</a>
+            </div>
+            <div class="footer-menu">
+                <div class="reproductions">
+                    <p class="reproductions-title">Репродукции</p>
+                    <ul class="reproductions-link">
+                        <li class="reproductions-link-item">
+                            <a href="" class="reproductions-link">Франция</a>
+                        </li>
+                        <li class="reproductions-link-item">
+                            <a href="" class="reproductions-link">Германия</a>
+                        </li>
+                        <li class="reproductions-link-item">
+                            <a href="" class="reproductions-link">Англия</a>
+                        </li>
+                    </ul>                   
+                </div>
+                <div class="new-reproductions">
+                    <p class="new-reproductions-title">Новинки</p>
+                    <ul class="new-reproductions-items">
+                        <li class="new-reproductions-link"><a href="">2022</a></li>
+                        <li class="new-reproductions-link"><a href="">2021</a></li>
+                        <li class="new-reproductions-link"><a href="">2020</a></li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <p class="about-us-title">О нас</p>
+                    <ul class="about-us-items">
+                        <li class="about-us-link"><a href="">Художники</a></li>
+                        <li class="about-us-link"><a href="">Менеджеры</a></li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="footer-social-media">
+              <ul class="social-media">
+                <li class="social-media-item">
+                    <a class="social-media-link" href="">
+                        <svg width="24" height="24" aria-label="Ссылка Фейсбук">
+                            <use class="icon-facebook" href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media-item">
+                    <a class="social-media-link" href="">
+                        <svg width="24" height="24" aria-label="Ссылка Инстаграм">
+                            <use class="icon-facebook" href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media-item">
+                    <a class="social-media-link" href="">
+                        <svg width="24" height="24" aria-label="Ссылка Ютюб">
+                            <use class="icon-facebook" href="./img/symbol-defs.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+              </ul>  
+            </div>
+            <p class="social-media-text">Ink. House ®</p>
+            <p class="social-media-text">All rights reserved</p>
+        </div>
+    </footer>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg width="30" height="30" aria-label="Переключатель мобильного меню">
